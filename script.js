@@ -62,11 +62,13 @@ document.querySelector(".check").addEventListener("click", function () {
 
 // When play again button is pressed
 document.querySelector(".again").addEventListener("click", function () {
+  // Restore DOM and UI to pre-game states
   document.querySelector("body").style.backgroundColor = "#000000";
   document.querySelector(".guess").value = null;
   document.querySelector(".score").textContent = 20;
   document.querySelector(".number").style.width = "15rem";
   document.querySelector(".number").textContent = "?";
+  // Restore Javascript to pre-game states
   newNum();
   scores.push(score);
   let highscore = checkHighscore(scores);
