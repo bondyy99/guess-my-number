@@ -60,6 +60,7 @@ document.querySelector(".check").addEventListener("click", function () {
   }
 });
 
+// When play again button is pressed
 document.querySelector(".again").addEventListener("click", function () {
   document.querySelector("body").style.backgroundColor = "#000000";
   document.querySelector(".guess").value = null;
